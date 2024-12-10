@@ -22,5 +22,5 @@ func main() {
 
 	fmt.Println("set1: ", set1)
 	fmt.Println("set2: ", set2)
-	fmt.Println("Пересечение set1 и set2: ", intersection)
+	fmt.Println("Intersection set1 and set2: ", intersection)
 }

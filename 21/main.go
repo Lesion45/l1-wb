@@ -30,7 +30,6 @@ func (a *Adapter) PlugInUS() string {
 	return a.device.PlugInEU() + " using an adapter"
 }
 
-// ClientCode - клиент, использующий только американскую розетку
 func ClientCode(socket AmericanSocket) {
 	fmt.Println(socket.PlugInUS())
 }

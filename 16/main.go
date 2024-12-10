@@ -9,18 +9,18 @@ func quickSort(arr []int) []int {
 
 	pivot := arr[len(arr)/2]
 
-	var less, equal, greater []int
+	var left, mid, right []int
 	for _, num := range arr {
 		if num < pivot {
-			less = append(less, num)
+			left = append(left, num)
 		} else if num == pivot {
-			equal = append(equal, num)
+			mid = append(mid, num)
 		} else {
-			greater = append(greater, num)
+			right = append(right, num)
 		}
 	}
 
-	return append(append(quickSort(less), pivot), quickSort(greater)...)
+	return append(append(quickSort(left), pivot), quickSort(right)...)
 }
 
 func main() {

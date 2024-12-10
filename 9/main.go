@@ -35,6 +35,7 @@ func main() {
 	for _, val := range arr {
 		in <- val
 	}
+
 	close(in)
 	wg.Wait()
 }
